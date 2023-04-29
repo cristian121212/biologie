@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home</title>
     <style>
-      p {
+       p {
         margin-top: 0;
         margin-bottom: 0;
         font-size: 20px;
       }
       body {
-        background-color: #f2f2f2;
+        background-color: 	wheat;
         font-size: 18px;
         width: 100%;
         height: 100%;
         margin: 0;
-        background-image: url(poze-proiect-biologie/3663432.jpg);
-        object-fit: cover;
       }
 
       .titlu-container {
@@ -36,7 +33,6 @@
         background-color: white;
       }
 
-
       .nume-participanti {
         padding-left: 10px;
         padding-right: 10px;
@@ -47,7 +43,55 @@
         padding-top: 7px;
         padding-bottom: 7px;
       }
-      
+
+      .header {
+        background-color: rgb(17, 40, 85);
+      }
+
+      .button-1 {
+        background-color: rgb(17, 40, 85);
+        color: white;
+        border: none;
+        margin-bottom: 20px;
+        margin-top: 3px;
+        margin-left: 8px;
+        font-size: 18px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .logo {
+        width: 400px;
+        margin-left: 20px;
+      }
+
+      .content {
+        width: 100%;
+        margin-top: 50px;
+        position: relative;
+        margin-bottom: 50px;
+        display: inline-block;
+      }
+
+      .background-image-container {
+        margin-left: 20px;
+        margin-right: 20px;
+        position: relative;
+        box-sizing: border-box;
+      }
+
+      .background-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .font-size-text {
+        font-size: 80px;
+        font-weight: bold;
+        box-sizing: border-box;
+        width: 80%;
+      }
       .content-container {
         display: flex;
         flex-direction: row;
@@ -57,29 +101,13 @@
         height: auto;
       }
 
-      .content-container-2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 40px;
-        width: 100%;
-        height: auto;
-      }
-
-      .content-container-3 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 40px;
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-      }
 
       .content-container-title {
         display: flex;
         align-items: center;
         justify-content: center;
+        background-color: rgb(62, 97, 167);
+        padding-bottom: 50px;
       }
 
       .content-title {
@@ -87,16 +115,7 @@
         font-family: sans-serif;
         padding-top: 10px;
         padding-bottom: 15px;
-      }
-
-      .content {
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 20px;
-        background-color: lightblue;
-        box-sizing: border-box;
-        width: 80%;
-        border-radius: 15px;
+        background-color: wheat;
       }
 
       .enunt {
@@ -105,7 +124,6 @@
       
       .enunt-1 {
         margin-left: 25px;
-        margin-top:
       }
 
 
@@ -115,7 +133,7 @@
       }
 
       .exemplu-1 {
-        max-width: 450px;
+        max-width: 490px;
         float: right;
         margin-left: 10px;
         margin-right: 10px;
@@ -124,7 +142,7 @@
       }
 
       .exemplu-2 {
-        max-width: 450px;
+        max-width: 490px;
         float: left;
         margin-top: 10px;
         margin-right: 10px;
@@ -180,29 +198,6 @@
         left: 0;
         bottom: 0;
       }
-      
-
-      .button {
-        background-color: rgb(10, 102, 194);
-        margin-left: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-width: 1px;
-        border-radius: 50px;
-        margin-bottom: 10px;
-        transition-duration: 0.15s;
-        font-size: 15px;
-      }
-
-      .button-color {
-        color: white;
-        text-decoration: none;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-width: 1px;
-        border-radius: 50px;
-        margin-bottom: 10px;
-      }
 
       .button:hover {
         background-color: white;
@@ -211,7 +206,6 @@
 
       .button-color:hover {
         color: rgb(10, 102, 194);
-        font-size: 20px;
       }
 
       .exces {
@@ -259,15 +253,109 @@
       }
       
       .tabel {
-        margin-left:20px;
-        margin-right:20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-style: solid;
+        border-left: none;
+        border-right: none;
+        background-color: rgb(218, 134, 103);
       }
-      
+      .tabel-1 {
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: rgb(218, 134, 103);
+      }
+
+      .content-2 {
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        border-style: solid;
+        border-left: none;
+        border-right: none;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        background-color: 	rgb(218, 134, 103);
+      }
+
+      .content-title {
+        margin-top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 60px;
+        box-shadow: 14px 10px 8px rgba(0, 0, 0, 0.8);
+      }
+
+      .div {
+        background-color: rgb(62, 97, 167);
+      }
+
+      .jos {
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        position: relative;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 100%;
+      }
+
+      .button-2 {
+        border: none;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-radius: 5px;
+        font-size: 30px;
+        cursor: pointer;
+        text-decoration: none;
+        position: absolute;
+        bottom: 20px;
+        width: 20%;
+        background-color: transparent;
+      }
+
+      .button-color {
+        color: white;
+        text-decoration: none;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-width: 1px;
+        border-radius: 50px;
+        margin-bottom: 10px;
+      }
+      .button-color-1 {
+        color: white;
+        background-color: green;
+        text-decoration: none;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-right: 15px;
+        border-width: 1px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      .spatiu-jos {
+        background-color: rgb(62, 97, 167);
+        height: 20px;
+      }
     </style>
   </head>
   <body>
     <div class="header">
-      <img class="logo" src="poze-proiect-biologie/Untitled.png">
+      <img class="logo" src="poze-proiect-biologie/linkedin_banner_image_2.png">
       <div>
         <button class="button-1">
           <a class="button-color" href="index.html"><u>Alcool</u></a>
@@ -277,122 +365,230 @@
         </button>
       </div>
     </div>
-
-    <div class="titlu-container">
-      <div class="titlu">
-        Alcoolul
+    <div class="content">
+      <div class="background-image-container">
+        <img class="background-image" src="poze-proiect-biologie/incremento-consumo-alcohol-pandemia-min_edited.jpg">
+        <div class="jos">
+          <button class="button-2">
+            <a class="button-color-1" href="#Alcoolul"><u>Incepe</u></a>
+          </button>
+        </div>
       </div>
     </div>
-    <div id="Alcoolul" class="content-container">
-      <div class="left-side">
-        <span></span>
+    <div class="spacing">
+      <div id="Alcoolul" class="content-container-title">
+        <div  class="content-title"><u>Alcoolul</u></div>
       </div>
-      <div class="content">
-        <div class="content-container-title">
-          <div class="content-title"><u>Alcoolul</u></div>
-        </div>
-        <div>
-          <img class="exemplu-1" src="poze-proiect-biologie/th (1).jpg">
-        </div>
-        <p>
-          <span  class="enunt"><strong>În limbajul curent</strong></span> , termenul de alcool se referă aproape întotdeauna la etanol, cunoscut și ca alcool de cereale, și deseori la orice băutură care conține etanol (vezi băutură alcoolică). Acest sens stă la baza termenului de alcoolism (dependență de alcool). Reținerea de a nu consuma alcool se numește abstinență. Ca medicament, etanolul este cunoscut ca având un efect depresiv, care scade acuitatea reflexelor sistemului nervos central. Alte forme de alcool sunt de obicei denumite cu un adjectiv de rigoare, precum alcool izopropilic sau prin sufixul -ol, ca în izopropanol.
-        </p>
+    </div>
+    <div class="content-2">
+      <div>
+        <img class="exemplu-1" src="poze-proiect-biologie/th (1) (1).jpg">
+      </div>
+      <p>
+        <span  class="enunt"><strong>În limbajul curent</strong></span> , termenul de alcool se referă aproape întotdeauna la etanol, cunoscut și ca alcool de cereale, și deseori la orice băutură care conține etanol (vezi băutură alcoolică). Acest sens stă la baza termenului de alcoolism (dependență de alcool). Reținerea de a nu consuma alcool se numește abstinență. Ca medicament, etanolul este cunoscut ca având un efect depresiv, care scade acuitatea reflexelor sistemului nervos central. Alte forme de alcool sunt de obicei denumite cu un adjectiv de rigoare, precum alcool izopropilic sau prin sufixul -ol, ca în izopropanol.
+      </p>
+      <div class="font-size">
+        <strong>Care Sunt Efectele Alcoolului Asupra Organismului?</strong>
+      </div>
+      <p><span class="enunt">Deoarece alcoolul incepe sa afecteze creierul unei persoane imediat ce patrunde in fluxul de sange, in articolul de fata am dori sa exploram efectele alcoolului asupra organismului.</span></p>
+      <p><span class="enunt">In cazul unei persoane sanatoase, ficatul metabolizeaza rapid alcoolul si ajuta organismul sa scape rapid de acesta. Totusi, atunci cand o persoana consuma bauturi alcoolice in exces, ficatul nu va mai putea filtra alcoolul suficient de repede, iar acest lucru declanseaza schimbari imediate in creier. De-a lungul timpului, consumul excesiv de alcool poate afecta atat creierul, cat si ficatul, provocand daune de durata.</span></p>
+      <p><span class="enunt">Consumul excesiv de alcool poate avea efecte de lunga durata asupra neurotransmitatorilor din creier, scazand sever eficacitatea lor. De asemenea, alcoolul distruge celulele ce intra in alcatuirea creierului si atrofiaza tesutul cerebral. Unele persoane cu antecedente de consum excesiv de alcool dezvolta si deficiente nutritionale care, la randul lor, afecteaza in continuare <strong>functia creierului</strong>.</span></p>
+    </div>
+    <div class="content-container-title">
+      <div class="content-title"><u>Sindromul de abstinenta la alcool</u></div>
+    </div>
+    <div class="content-2">
+      <div>
+        <img class="exemplu-2" src="poze-proiect-biologie/sevral_alcool_cauze646_646_324 (1).jpg">
+        <p><span class="enunt">Sindromul de abstinenta la alcool reprezinta conglomeratul de simptome care apar atunci cand o persoana care se opreste brusc sau reduce semnificativ aportul de alcool dupa o perioada indelungata de timp in care a consumat cantitati mari de alcool.</span></p>
+        <p><span class="enunt">Sindromul de abstinenta la alcool poate cauza o combinatie de simptome fizice si emotionale, de la anxietate usoara si oboseala, la greata. Unele simptome ale sevrajului alcoolic sunt la fel de severe ca halucinatiile si convulsiile, punand viata in real pericol.</span></p>
         <div class="font-size">
-          <strong>Care Sunt Efectele Alcoolului Asupra Organismului?</strong>
+          <strong>Simptome:</strong>
         </div>
-        <p><span class="enunt">Deoarece alcoolul incepe sa afecteze creierul unei persoane imediat ce patrunde in fluxul de sange, in articolul de fata am dori sa exploram efectele alcoolului asupra organismului.</span></p>
-        <p><span class="enunt">In cazul unei persoane sanatoase, ficatul metabolizeaza rapid alcoolul si ajuta organismul sa scape rapid de acesta. Totusi, atunci cand o persoana consuma bauturi alcoolice in exces, ficatul nu va mai putea filtra alcoolul suficient de repede, iar acest lucru declanseaza schimbari imediate in creier. De-a lungul timpului, consumul excesiv de alcool poate afecta atat creierul, cat si ficatul, provocand daune de durata.</span></p>
-        <p><span class="enunt">Consumul excesiv de alcool poate avea efecte de lunga durata asupra neurotransmitatorilor din creier, scazand sever eficacitatea lor. De asemenea, alcoolul distruge celulele ce intra in alcatuirea creierului si atrofiaza tesutul cerebral. Unele persoane cu antecedente de consum excesiv de alcool dezvolta si deficiente nutritionale care, la randul lor, afecteaza in continuare <strong>functia creierului</strong>.</span></p>
-        <div>
-          <div class="content-container-title">
-            <div class="content-title"><u>Sindromul de abstinenta la alcool</u></div>
-          </div>
-        </div>
-        <div>
-          <img class="exemplu-2" src="poze-proiect-biologie/sevral_alcool_cauze646_646_324.jpg">
-          <p><span class="enunt">Sindromul de abstinenta la alcool reprezinta conglomeratul de simptome care apar atunci cand o persoana care se opreste brusc sau reduce semnificativ aportul de alcool dupa o perioada indelungata de timp in care a consumat cantitati mari de alcool.</span></p>
-          <p><span class="enunt">Sindromul de abstinenta la alcool poate cauza o combinatie de simptome fizice si emotionale, de la anxietate usoara si oboseala, la greata. Unele simptome ale sevrajului alcoolic sunt la fel de severe ca halucinatiile si convulsiile, punand viata in real pericol.</span></p>
-          <div class="font-size">
-            <strong>Simptome:</strong>
-          </div>
-          <p><span class="enunt">Semnele si simptomele sindromului de abstinenta la alcool pot aparea oriunde intre sase ore si cateva zile dupa consumul ultimei bauturi alcoolice. De obicei, acestea includ cel putin doua dintre urmatoarele:</span></p>
-          <p>-tremuraturi ale mainilor;</p>
-          <p>-anxietate;</p>
-          <p>-greata;</p>
-          <p>-varsaturi;</p>
-          <p>-dureri de cap;</p>
-          <p>-cresterea ritmului cardiac;</p>
-          <p>-transpiratie;</p>
-          <p>-iritabilitate;</p>
-          <p>-confuzie;</p>
-          <p>-insomnie;</p>
-          <p>-cosmaruri;</p>
-          <p>-tensiune arteriala crescuta.</p>
-          <p><span class="enunt-1">Simptomele se pot agrava pe parcursul a doua pana la trei zile, iar unele simptome mai blande pot persista saptamani la unele persoane. Acestea pot fi mai vizibile atunci cand ramane mai putin <strong>alcool in sange</strong>.</span></p>
-        </div>
-        <div>
-          <div class="content-container-title">
-            <div class="content-title"><u>Pro si Contra la consumul alcoolului</u></div>
-          </div>
-          <div class="tabel">
-            <table bgcolor="black">
-              <tr bgcolor="gray">
-                <th><u>Pro</u></th>
-                <th><u>Contra</u></th>
-              </tr>
-              <tr bgcolor="lightgrey"
-                  align="left">
-                  <th>
-                    <p>Consumul moderat de alcool poate oferi anumite beneficii pentru sănătate, cum ar fi:</p>
-                    <p><span class="enunt">&#8226;Reducerea riscului de a dezvolta boli de inimă</span></p>
-                    <p><span class="enunt">&#8226;Posibil să  reduceți riscul de accident vascular cerebral ischemic (atunci când arterele către creier sunt îngustate sau blocate, cauzând un flux sanguin sever redus)</span></p>
-                    <p><span class="enunt">&#8226;Posibil să reduceți riscul de diabet</span></p>
-                    <p>Cu toate acestea, o dietă alimentară sănătoase și activitățile fizice zilnice au beneficii mult mai mari pentru sănătate.</p>
-                  </th>
-                  <th class="top">
-                    <p><span class="enunt">Rețineți că nici consumul moderat de alcool nu este complet lipsit de riscuri. De exemplu, chiar și cei care consumă alcoo rar ( nu mai mult de o băutură pe zi) au un risc mic, dar real, de a dezvolta unele formei de cancer, cum ar fi cancerul esofagian. Iar consumul de alcool, chiar și în cantități mici înainte de a te urca la volan, nu este niciodată o idee bună.</span></p>
-                  </th>
-              </tr>
-              <tr bgcolor="lightgrey"
-                  align="left">
-                  <th>
-                    <p>Pe de altă parte, dacă bei ocazional și ești sănătos, probabil poți continua să bei alcool atât timp cât faci acest lucru în mod responsabil.</p>
-                  </th>
-                  <th>
-                    <p><span class="enunt">Beneficiile potențiale ale alcoolului sunt relativ mici și s-ar putea să nu se aplice tuturor persoanelor. De fapt, ultimele ghiduri de nutriție arată clar că nimeni nu ar trebui să înceapă să consume alcool sau să bea mai des pe baza potențialelor beneficii pentru sănătate. Pentru multe persoane, beneficiile posibile nu depășesc riscurile și evitarea alcoolului este cel mai bun curs.</span></p>
-                  </th>
-              </tr>
-               <tr bgcolor="lightgrey"
-                  align="left">
-                  <th>
-                    <p>In cea ce priveste consumul alcoolului in cantitati mari, poate oferi o creste a increderii de sine care te ajuta sa fi mai putin nervos.</p>
-                  </th>
-                  <th>
-                    <p><span class="enunt">A bea prea mult este pur și simplu periculos – vă poate face să acționați necorespunzător, să creați un potențial de dependență și poate provoca accidente de băut și de conducere.</span></p>
-                  </th>
-              </tr>
-              <tr bgcolor="lightgrey"
-                  align="left">
-                  <th>
-                    
-                  </th>
-                  <th>
-                    <p><span class="enunt">În sfârșit, acesta este oribil: alcoolul a fost legat la cancerele gurii, faringelui, laringelui, esofagului și colonului, precum și la unele tipuri de cancer mamar.</span></p>
-                  </th>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </div>
-      <div class="right-side">
-        <span></span>
+        <p><span class="enunt">Semnele si simptomele sindromului de abstinenta la alcool pot aparea oriunde intre sase ore si cateva zile dupa consumul ultimei bauturi alcoolice. De obicei, acestea includ cel putin doua dintre urmatoarele:</span></p>
+        <p>-tremuraturi ale mainilor;</p>
+        <p>-anxietate;</p>
+        <p>-greata;</p>
+        <p>-varsaturi;</p>
+        <p>-dureri de cap;</p>
+        <p>-cresterea ritmului cardiac;</p>
+        <p>-transpiratie;</p>
+        <p>-iritabilitate;</p>
+        <p>-confuzie;</p>
+        <p>-insomnie;</p>
+        <p>-cosmaruri;</p>
+        <p>-tensiune arteriala crescuta.</p>
+        <p><span class="enunt-1">Simptomele se pot agrava pe parcursul a doua pana la trei zile, iar unele simptome mai blande pot persista saptamani la unele persoane. Acestea pot fi mai vizibile atunci cand ramane mai putin <strong>alcool in sange</strong>.</span></p>
       </div>
     </div>
-    <div class="butoane">
-      <button class="button">
-        <a class="button-color" href="#Alcoolul">"Alcoolul"</a>
-      </button>
+      <div class="div">
+        <div class="content-container-title">
+          <div class="content-title"><u>Pro si Contra la consumul alcoolului</u></div>
+        </div>
+        <div class="tabel-1">
+          <table bgcolor="black">
+            <tr bgcolor="gray">
+              <th><u>Pro</u></th>
+              <th><u>Contra</u></th>
+            </tr>
+            <tr bgcolor="lightgrey"
+                align="left">
+                <th>
+                  <p>Consumul moderat de alcool poate oferi anumite beneficii pentru sănătate, cum ar fi:</p>
+                  <p><span class="enunt">&#8226;Reducerea riscului de a dezvolta boli de inimă</span></p>
+                  <p><span class="enunt">&#8226;Posibil să  reduceți riscul de accident vascular cerebral ischemic (atunci când arterele către creier sunt îngustate sau blocate, cauzând un flux sanguin sever redus)</span></p>
+                  <p><span class="enunt">&#8226;Posibil să reduceți riscul de diabet</span></p>
+                  <p>Cu toate acestea, o dietă alimentară sănătoase și activitățile fizice zilnice au beneficii mult mai mari pentru sănătate.</p>
+                </th>
+                <th class="top">
+                  <p><span class="enunt">Rețineți că nici consumul moderat de alcool nu este complet lipsit de riscuri. De exemplu, chiar și cei care consumă alcoo rar ( nu mai mult de o băutură pe zi) au un risc mic, dar real, de a dezvolta unele formei de cancer, cum ar fi cancerul esofagian. Iar consumul de alcool, chiar și în cantități mici înainte de a te urca la volan, nu este niciodată o idee bună.</span></p>
+                </th>
+            </tr>
+            <tr bgcolor="lightgrey"
+                align="left">
+                <th>
+                  <p>Pe de altă parte, dacă bei ocazional și ești sănătos, probabil poți continua să bei alcool atât timp cât faci acest lucru în mod responsabil.</p>
+                </th>
+                <th>
+                  <p><span class="enunt">Beneficiile potențiale ale alcoolului sunt relativ mici și s-ar putea să nu se aplice tuturor persoanelor. De fapt, ultimele ghiduri de nutriție arată clar că nimeni nu ar trebui să înceapă să consume alcool sau să bea mai des pe baza potențialelor beneficii pentru sănătate. Pentru multe persoane, beneficiile posibile nu depășesc riscurile și evitarea alcoolului este cel mai bun curs.</span></p>
+                </th>
+            </tr>
+             <tr bgcolor="lightgrey"
+                align="left">
+                <th>
+                  <p>In cea ce priveste consumul alcoolului in cantitati mari, poate oferi o creste a increderii de sine care te ajuta sa fi mai putin nervos.</p>
+                </th>
+                <th>
+                  <p><span class="enunt">A bea prea mult este pur și simplu periculos – vă poate face să acționați necorespunzător, să creați un potențial de dependență și poate provoca accidente de băut și de conducere.</span></p>
+                </th>
+            </tr>
+            <tr bgcolor="lightgrey"
+                align="left">
+                <th>
+                  
+                </th>
+                <th>
+                  <p><span class="enunt">În sfârșit, acesta este oribil: alcoolul a fost legat la cancerele gurii, faringelui, laringelui, esofagului și colonului, precum și la unele tipuri de cancer mamar.</span></p>
+                </th>
+            </tr>
+          </table>
+        </div>
+      </div>
     </div>
+    <div class="spacing">
+      <div class="content-container-title">
+        <div  class="content-title"><u>Pericolele consumului de alcool!</u></div>
+      </div>
+    </div>
+    <div class="content-2">
+      <div>
+        <img class="exemplu-1" src="poze-proiect-biologie/cutu.jpg">
+      </div>
+      <div class="font-size">
+        <strong><u>Când trebuie evitat alcoolul:</u></strong>
+      </div>
+      <p>În anumite situații, riscurile consumului de alcool pot depăși posibilele beneficii pentru sănătate. De exemplu, cere sfatul medicului în legătură cu consumul de alcool dacă:</p>
+      <p><span class="enunt">&#x2022; Esti insarcinata sau incerci sa ramai insarcinata</span></p>
+      <p><span class="enunt">&#x2022; Ai fost diagnosticat cu alcoolism sau dependență de alcool sau aveți un istoric familial puternic de alcoolism</span></p>
+      <p><span class="enunt">&#x2022; Ai avut un atac hemoragic (atunci când un vas de sânge din creier se rupe sau pierde sânge)</span></p>
+      <p><span class="enunt">&#x2022; Suferi de boli hepatice sau pancreatice</span></p>
+      <p><span class="enunt">&#x2022; Suferi de insuficiență cardiacă sau ți s-a spus că ai o inimă slăbită</span></p>
+      <p><span class="enunt">&#x2022; Urmezi un tratament cu medicamente care pot interacționa cu alcoolul.</span></p>
+      <p>Deloc neglijabile sunt și efectele fizice pe care le produce consumul de alcool.
+        Pe lângă numeroasele probeleme de sănătate, alcool poate de asemenea să ne facă să avem un aspect fizic mai puțin plăcut. Pentru că alcoolul deshidratează tenul, acesta va părea mai uscat, iar ridurile vor fi amplificate. Consumul de alcool este de asemenea legat de apariția rozaceei, o boală de piele care se manifestă prin pete roșii pe ten, piele iritată. </p>
+      <div class="font-size">
+        <strong><u>Riscurile abuzului de alcool:</u></strong>
+      </div>
+      <p>
+        <span  class="enunt"><strong>Consumul exagerat</strong></span> , sau abuzul de alcool este definit ca mai mult de trei băuturi în orice zi sau mai mult de șapte băuturi pe săptămână pentru femei și pentru bărbați peste 65 de ani și mai mult de patru băuturi în orice zi sau mai mult de 14 băuturi pe săptămână pentru bărbați în vârsta de 65 de ani sau mai tineri.
+      </p>
+      <p>Consumul impulsiv de alcool este definit ca patru sau mai multe băuturi în două ore pentru femei și cinci sau mai multe băuturi în termen de două ore pentru bărbați.</p>
+      <p>Consumul excesiv de alcool poate crește riscul unor probleme de sanatate grave, inclusiv:</span></p>
+      <p><span class="enunt">&#x2022; Anumite tipuri de cancer, inclusiv cancerul de sân și cancerele gurii, gâtului, esofagului și ficatului</p>
+      <p><span class="enunt">&#x2022; pancreatita</span></p>
+      <p><span class="enunt">&#x2022; Moarte subită dacă aveți deja boli cardiovasculare</span></p>
+      <p><span class="enunt">&#x2022; Leziunile musculare cardiace (cardiomiopatie alcoolică) care duc la insuficiență cardiacă</span></p>
+      <p><span class="enunt">&#x2022; Accident vascular cerebral</span></p>
+      <p><span class="enunt">&#x2022; Tensiune arterială crescută</span></p>
+      <p><span class="enunt">&#x2022; Ciroză hepatică</span></p>
+      <p><span class="enunt">&#x2022; Sinucidere</span></p>
+      <p><span class="enunt">&#x2022; Accidentare gravă sau moarte accidentală</span></p>
+      <p><span class="enunt">&#x2022; Leziuni ale creierului și alte probleme la un copil nenăscut</span></p>
+      <p><span class="enunt">&#x2022; Sindromul de sevraj la alcool</span></p>
+    </div>
+    <div class="content-container-title">
+      <div class="content-title"><u>De ce oamenii consuma alcool?</u></div>
+    </div>
+    <div class="content-2">
+      <p>
+        <span  class="enunt"><strong>Deşi se ştie</strong></span>  că alcoolul produce efecte negative, atât asupra fizicului, cât şi a psihicului, oamenii continuă să-l consume în exces. Psihologii spun că între consumul inofensiv şi cel excesiv de alcool există un prag aproape inexistent şi extrem de uşor de trecut.
+      </p>
+      <p>
+        <span  class="enunt"></span>De ce consumă oamenii produse şi băuturi despre care ştiu că le fac rău? Este şi cazul alcoolului, care se poate transforma dintr-o plăcere într-un viciu greu de controlat. 
+      </p>
+      <p>
+        <span  class="enunt">Potrivit psihologului Daniela Dragne-Macarie, alcoolul consumat în cantităţi mici devine o plăcere şi se savurează, consumatorii apreciind aroma, gustul şi compania persoanelor din jur. Din păcate, între consumul inofensiv şi consumul excesiv de alcool există un prag aproape insesizabil şi extrem de uşor de trecut, deoarece, în stare de ebrietate se nasc o serie de manifestări, în funcţie de starea emoţională a persoanei: poate trece brusc de la veselie la tristeţe, de la pasivitate la agresivitate, de la tandreţe la brutalitate. 
+      </p>
+      <p>
+        <span  class="enunt"></span>Specialistul spune că există mai multe tipuri de consumatori de alcool, dar şi diferite motivaţii din spatele fiecărei categorii. În 1960,  E.M. Jellinek a clasificat consumatorii de alcool în mai multe categorii:
+      </p>
+      <div class="tabel-1">
+        <table bgcolor="black">
+          <tr bgcolor="gray">
+            <th><u>Nume</u></th>
+            <th><u>Motiv</u></th>
+          </tr>
+          <tr bgcolor="lightgrey"
+              align="left">
+              <th align="center">
+                <p>Băutorii de tip ALFA</p>
+              </th>
+              <th class="top">
+                <p><span class="enunt">Care au ca motiv principal al consumului relaxarea, destresarea, evadarea din stări de dispoziţie neplăcute. Aceştia consumă alcool pentru a se uşura, încercând să-şi rezolve diferite probleme. În această formă încă există control asupra consumului de alcool, dar progresiv se poate instala dependenţa.</span></p>
+              </th>
+          </tr>
+          <tr bgcolor="lightgrey"
+              align="left">
+              <th align="center">
+                <p>Băutorii de tip BETA</p>
+              </th>
+              <th>
+                <p><span class="enunt">Aceştia obişnuiesc să asocieze orice situaţie sau eveniment cu consumul de alcool. Consumă frecvent alcool, cu diferite ocazii, la petreceri, nunţi, botezuri, sărbători, aniversări, fără a fi încă instalată dependenţa. </span></p>
+              </th>
+          </tr>
+           <tr bgcolor="lightgrey"
+              align="left">
+              <th align="center">
+                <p>Băutorii de tip GAMA</p>
+              </th>
+              <th>
+                <p><span class="enunt">Aceştia deja au o nevoie psihică şi fizică de consum, în lipsa consumului apărând stări psihice şi fizice neplăcute (depresie, iritabilitate, nervozitate, melancolie, agresivitate, agitaţie psiho-motorie, dureri şi indispoziţii fizice. Băutorii din această categorie nu mai pot controla cantitatea de alcool consumată, apelând la alcool atât dimineaţa, cât şi seara.</span></p>
+              </th>
+          </tr>
+          <tr bgcolor="lightgrey"
+              align="left">
+              <th align="center"
+              width="250px">
+                <p>Băutorii de tip DELTA</p>
+              </th>
+              <th>
+                <p><span class="enunt">Motivul principal al consumului este nevoia fizică de a consuma alcool, obişnuinţa. Aceştia sunt dependenţi de alcool în primul rând fizic. Potpăstra o perioadă mai lungă controlul asupra cantităţii de alcool consumată, nu se îmbată tare, dar nici nu pot renunţa.</span></p>
+              </th>
+            </tr>
+          <tr bgcolor="lightgrey"
+            align="left">
+            <th align="center">
+              <p>Băutorii de tip EPISLON</p>
+            </th>
+            <th>
+              <p><span class="enunt">Motivul principal al consumului este decompensarea, lipsa capacităţii de a menţine un echilibru, starea de epuizare sau de depăşire a resurselor funcţionale fizice şi psihice.  Aceştia sunt dependenţi de alcool, consumând necontrolat timp de câteva zile, având însă şi perioade mai lungi fără consume abuziv. Ca lungime de timp, pauzele dintre episoadele de consum pot varia de la câteva săptămâni până la 5-6 luni, după care pot să existe zile în şir de consum, persoana fiind aproape permanent în stare de ebrietate. </span></p>
+            </th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="spatiu-jos">
+      <span></span>
     </div>
   </body>
 </html>
