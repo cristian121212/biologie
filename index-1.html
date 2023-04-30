@@ -344,6 +344,68 @@
         background-color: rgb(62, 97, 167);
         height: 20px;
       }
+      
+            .wrapper {
+        position: relative;
+        overflow: hidden;
+        max-width: 490px;
+        float: right;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+        height: 250px;
+      }
+
+      .wrapper-1 {
+        position: relative;
+        overflow: hidden;
+        max-width: 490px;
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+        height: 250px;
+      }
+
+      #slide {
+        position: absolute;
+        right: -1000px;
+        width: 100%;
+        height: 250px;
+        background: blue;
+        -webkit-animation: slide 0.5s forwards;
+        -webkit-animation-delay: 2s;
+         animation: slide 0.5s forwards;
+        animation-delay: 2s;
+      }
+
+      @-webkit-keyframes slide {
+        100% { right: 0; }
+      }
+
+      @keyframes slide {
+        100% { right: 0; }
+      }
+
+      #slide-1 {
+        position: absolute;
+        right: 1000px;
+        width: 100%;
+        height: 250px;
+        background: blue;
+        -webkit-animation: slide-1 0.5s forwards;
+        -webkit-animation-delay: 2s;
+         animation: slide 0.5s forwards;
+        animation-delay: 2s;
+      }
+
+      @-webkit-keyframes slide-1 {
+        100% { left: 0; }
+      }
+
+      @keyframes slide-1 {
+        100% { left: 0; }
+      }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -370,8 +432,8 @@
       </div>
     </div>
     <div class="content-2">
-      <div>
-        <img class="exemplu-1" src="poze-proiect-biologie/th (1) (1).jpg">
+      <div class="wrapper">
+        <img id="slide" src="poze-proiect-biologie/th (1) (1).jpg">
       </div>
       <p>
         <span  class="enunt"><strong>În limbajul curent</strong></span> , termenul de alcool se referă aproape întotdeauna la etanol, cunoscut și ca alcool de cereale, și deseori la orice băutură care conține etanol (vezi băutură alcoolică). Acest sens stă la baza termenului de alcoolism (dependență de alcool). Reținerea de a nu consuma alcool se numește abstinență. Ca medicament, etanolul este cunoscut ca având un efect depresiv, care scade acuitatea reflexelor sistemului nervos central. Alte forme de alcool sunt de obicei denumite cu un adjectiv de rigoare, precum alcool izopropilic sau prin sufixul -ol, ca în izopropanol.
@@ -388,7 +450,9 @@
     </div>
     <div class="content-2">
       <div>
-        <img class="exemplu-2" src="poze-proiect-biologie/sevral_alcool_cauze646_646_324 (1).jpg">
+        <div class="wrapper-1">
+          <img id="slide-1" src="poze-proiect-biologie/sevral_alcool_cauze646_646_324 (1).jpg">
+        </div>
         <p><span class="enunt">Sindromul de abstinenta la alcool reprezinta conglomeratul de simptome care apar atunci cand o persoana care se opreste brusc sau reduce semnificativ aportul de alcool dupa o perioada indelungata de timp in care a consumat cantitati mari de alcool.</span></p>
         <p><span class="enunt">Sindromul de abstinenta la alcool poate cauza o combinatie de simptome fizice si emotionale, de la anxietate usoara si oboseala, la greata. Unele simptome ale sevrajului alcoolic sunt la fel de severe ca halucinatiile si convulsiile, punand viata in real pericol.</span></p>
         <div class="font-size">
@@ -470,8 +534,8 @@
       </div>
     </div>
     <div class="content-2">
-      <div>
-        <img class="exemplu-1" src="poze-proiect-biologie/cutu.jpg">
+      <div class="wrapper">
+        <img id="slide" src="poze-proiect-biologie/cutu.jpg">
       </div>
       <div class="font-size">
         <strong><u>Când trebuie evitat alcoolul:</u></strong>
